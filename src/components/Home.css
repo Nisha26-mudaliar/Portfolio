@@ -1,0 +1,103 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-greeting {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.hero-subtitle {
+  font-size: 30px;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 220px;
+  }
+}
